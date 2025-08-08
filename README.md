@@ -8,9 +8,6 @@ Simula uma página institucional de uma escola, utilizando HTML, CSS e JavaScrip
 - Link para WhatsApp
 - Mapa Google Maps embutido
 
-## Como visualizar
-[👉 Clique aqui para acessar o site] (https://seuusuario.github.io/nome-do-projeto)
-
 ## Tecnologias
 - HTML5
 - CSS3
