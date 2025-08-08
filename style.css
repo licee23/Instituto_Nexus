@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url(/img/fundo.png);
+  background-attachment: fixed; 
+}
+
+header {
+  background: #0b2344;
+  padding: 5px 40px;
+}
+
+.logo img {
+  max-height: 150px; /* Ajuste conforme necessário */
+  width: auto;
+  border-radius: 1000%; /* Se quiser a logo redonda */
+  object-fit: cover;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li a:hover {
+  color: #ffbd59;
+  transition: color 0.3s ease;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+section {
+  padding: 40px 20px;
+  line-height: 2.8;
+  text-align: center;
+  
+}
+section p {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.slideshow img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.galeria {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.foto {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-conteudo {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+form button {
+  background: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.whatsapp {
+  display: inline-block;
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto {
+    width: 80%;
+  }
+}
+
+footer {
+  color: #fff;
+  background-color: #0b2344;
+  padding: 30px 0;
+ justify-items: center;
+}

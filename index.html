@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escola Fictícia</title>
+  <link rel="shortcut icon" href="/img/book.icon">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+
+      <div class="logo">
+       <img src="/img/logo1.jpeg" alt="Logo da Academia Nexus">
+      </div>
+      
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#fotos">Fotos da Escola</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Home -->
+    <section id="home">
+      <div class="slideshow">
+        <img id="slide" src="/img/slide1.jpg" alt="Imagem da escola" />
+      </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="quem-somos">
+      <h1>Quem Somos</h1>
+      <h2>Educação com Excelência</h2>
+      <p>A Academia Nexus é uma instituição comprometida com a formação integral do aluno, valorizando não apenas o conhecimento acadêmico
+        , mas também o desenvolvimento ético, emocional e social.</p>
+
+        <p> Com uma proposta pedagógica inovadora, nossa escola busca preparar os estudantes para os desafios do presente e do futuro,
+           incentivando a autonomia, o pensamento crítico e a responsabilidade cidadã.</p>
+
+           <p> Contamos com uma equipe de educadores experientes e apaixonados pelo que fazem, 
+            além de uma estrutura moderna que favorece a aprendizagem significativa e colaborativa.</p>
+
+            <p> Acreditamos que a educação vai além da sala de aula. Por isso, promovemos projetos interdisciplinares, atividades culturais,
+               esportivas e tecnológicas, formando cidadãos conscientes, criativos e preparados para transformar o mundo.</p>       
+    </section>
+
+    <!-- Fotos -->
+    <section id="fotos">
+      <h2>Fotos da Escola</h2>
+      <div class="galeria">
+        <img src="/img/imagem1.jpeg" class="foto" onclick="abrirModal(this.src)" />
+        <img src="/img/imagem2.jpg" class="foto" onclick="abrirModal(this.src)" />
+        <img src="/img/imagem3.jpg" class="foto" onclick="abrirModal(this.src)" />
+      </div>
+    </section>
+
+    <!-- Modal de Imagens -->
+    <div id="modal" class="modal">
+      <span onclick="fecharModal()" class="fechar">&times;</span>
+      <img id="img-modal" class="modal-conteudo" />
+    </div>
+
+    <!-- Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <form id="form-contato">
+        <input type="text" id="nome" placeholder="Nome*" required />
+        <input type="email" id="email" placeholder="E-mail*" required />
+        <textarea id="mensagem" placeholder="Mensagem*" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <a class="whatsapp" href="https://wa.me/5599999999999" target="_blank">
+        Fale conosco pelo WhatsApp
+      </a>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3..."
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Academia Nexus</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
